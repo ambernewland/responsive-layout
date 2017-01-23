@@ -1,0 +1,389 @@
+ /*** BASE STYLES ***/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #202020;
+    line-height: 1.6;
+}
+
+h1 {
+    
+    text-align: center;
+    font-family: 'Roboto Slab', 'Open Sans', sans-serif;
+    margin: 1em 0;
+}
+
+
+p {  
+    font-family: 'Open Sans', sans-serif;
+    color: #202020;
+    font-size: 12pt;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 1.5em;
+}
+
+h2, p.about-text { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    font-weight: 100;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    color: #828489;
+}
+
+
+h3 {
+    font-size: 11pt;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: black;
+}
+
+h4 {
+    
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+h5 {
+    
+    font-size: 13pt;
+    font-weight: 700;
+    text-align: center;
+    color: #606266;
+}
+
+header {
+    width: 100%;
+    background: #C9C9C9;
+}
+
+li {
+    
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.contact {
+    
+    text-align: center;
+    color: #828489;
+}
+
+
+
+/*** Layout Containers ***/
+
+.container {
+    
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.main-header {
+    
+    padding-top: 0.2em;
+    padding-bottom: 1.5em;
+    background: #F9F9F9;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.contact {
+    
+    background: #F9F9F9;
+    border-bottom: 1px solid #EFEFEF;
+    
+}
+
+.profile {
+    
+    background: #BABABA;
+}
+
+.contact.title {
+    
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.block {
+    
+    width: 100%;
+    align-content: center;
+    display: block;
+}
+
+img {
+    
+  max-width: 100%;
+  margin-bottom: 10px;
+ display: block;
+
+}
+
+.project-block {
+    
+    padding: 0 10px;
+}
+
+.face {
+    
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+footer {
+    
+    background: #F9F9F9;    
+}
+
+
+
+
+/*** links and hovers ***/
+
+a:link { 
+  color: darkblue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkslateblue;
+}
+
+a:hover {
+  color: dodgerblue;
+}
+
+a:active {
+  color: lightcoral;
+}
+
+
+/*** Navigation ***/
+
+
+.main-nav li {
+	text-align: center;
+	background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.main-nav a:hover {
+	color: darkblue;
+}
+
+.main-footer {
+    
+    background: #F9F9F9;
+    width: 100%;
+    display: block;
+    float: left;
+    padding-top: 10px;
+}
+
+.main-footer .left, 
+.main-footer .right
+{
+    width: 50%;
+    display: block;
+    float: left;
+    padding: 0 20px;
+    
+}
+
+.main-footer .right
+{
+    float: right;
+    
+}
+
+.footer-nav li {
+    display: none;
+}
+
+
+.footer-nav .mobile-only {
+    
+    display: inline-block;
+    text-align: left;
+}
+
+ul.footer-nav {
+    text-align: right;
+}
+
+footer .left p {
+    margin: 0;
+    text-align: left;
+    padding: 0;
+}
+
+.bottom-detail {
+    padding-bottom: 40px;
+    display: block;
+}
+
+
+
+
+
+
+ /*** MEDIA ***/
+
+@media screen and (min-width: 768px) {
+
+	.container {
+		width: 95%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+
+    .footer-nav li {
+        display: block;
+    }
+
+    .footer-nav .mobile-only {
+        display: none;
+    }
+    
+    .footer-nav li {
+        text-align: left;
+        padding-left: 10px;
+    }
+    
+    
+    .main-nav li {
+        display: inline-block;
+        width: auto;
+        padding: 20px 30px;
+        text-align: center;
+        background: transparent;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    nav {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    overflow: hidden;
+    }
+    
+    .main-nav {
+    font-weight: bold;
+    font-size: 10pt;
+    text-align: center;
+    }
+    
+    .about-me {
+        
+    }
+    
+    p.about-text {
+        text-align: left;
+    }
+
+    img.face {
+    float: right;
+    max-width: 45%;
+    vertical-align: top;
+    display: block;
+    position: relative;
+    margin: 0;
+    margin-left: 30px;
+}
+    .project-block {
+    width: 50%;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+    display: inline-block;
+    float: left
+}
+    
+    .wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer-nav li {
+        display: inline-block;
+        width: auto;
+        margin-left: 30px;
+    }
+    
+    .bottom-detail {
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .nav {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        overflow: hidden;
+        }
+    
+    .main-nav {
+        font-weight: bold;
+        font-size: 10pt;
+        text-align: center;
+        display: inline-block;
+        float: right;
+        overflow: hidden;
+        margin-right: -20px;
+        }
+    
+    h1 {
+        text-align: left;
+        padding-left: 20px;
+        }
+    
+    .project-block {
+        width: 33%;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+        display: inline-block;
+        float: left
+        }
+}
+
+/*** Float Clearfix ***/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
